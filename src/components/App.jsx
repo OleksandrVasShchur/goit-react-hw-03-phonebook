@@ -60,10 +60,7 @@ export class App extends Component {
     if(parceLocStorContacts) {
       this.setState(({contacts: [...parceLocStorContacts]}))
     }
-    // this.setState(prevState => ({
-    //   images: [...prevState.images, ...photos],
-
-    // потрібно доопрацювати 
+    
   }
 
   componentDidUpdate(_, prevState) {
