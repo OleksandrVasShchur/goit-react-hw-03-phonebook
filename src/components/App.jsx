@@ -58,9 +58,12 @@ export class App extends Component {
     const parceLocStorContacts = JSON.parse(locStorContacts);
 
     if(parceLocStorContacts) {
-      this.setState({contacts: parceLocStorContacts})
+      this.setState(({contacts: [...parceLocStorContacts]}))
     }
-    
+    // this.setState(prevState => ({
+    //   images: [...prevState.images, ...photos],
+
+    // потрібно доопрацювати 
   }
 
   componentDidUpdate(_, prevState) {
